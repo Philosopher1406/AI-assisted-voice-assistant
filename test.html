@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Assistant</title>
+</head>
+<body>
+    <h1>Voice Assistant</h1>
+    <form action="/jarvis" method="POST">
+        <input type="submit" value="Run Voice Assistant">
+    </form>
+    <textarea id="output" rows="10" cols="50" readonly></textarea>
+
+    <script>
+        const form = document.querySelector('form');
+        const outputTextarea = document.getElementById('output');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const response = await fetch('/jarvis', { method: 'POST' });
+            const output = await response.text();
+
+            outputTextarea.value = output;
+        });
+    </script>
+</body>
+</html>

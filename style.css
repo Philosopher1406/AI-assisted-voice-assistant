@@ -1,0 +1,140 @@
+body{
+    background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/06/black-screen-06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content{
+    color: #3f7caa;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 5px;
+    text-align: center;
+    margin-top: -30%;
+  }
+  .cnt{
+    text-align: center;
+    margin-top: -20%;
+  }
+
+  p{
+    color: #16f5f9;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: larger;
+    padding: 10px;
+  }
+
+
+  
+  h1{
+    color:#3f7caa;
+    font-family: 'Ubuntu', sans-serif;
+  }
+      .cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin: 0;
+    margin-left: 3%;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  .google-mic-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: relative;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+
+  .google-mic-btn::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #16f5f9;
+  }
+
+  .google-mic-btn::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 28px;
+    width: 44px;
+    height: 12px;
+    background-color: #16f5f9;
+    transform: skew(-20deg);
+  }
+
+  .google-mic-btn-dot {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #16f5f9;
+    animation: pulse 2s infinite;
+  }
+
+  .google-mic-btn-dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  .google-mic-btn-dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+  /* Button Styles */
+  .google-mic-btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .google-mic-btn:focus {
+    box-shadow: 0 0 0 3px #3f7caa;
+
+  }
+  *{
+    margin:0;
+    padding:0;
+    font-family:verdana;
+  }
+  #abc{
+    width:100%;
+    height:100vh;
+    background-image: url(img2.jpg);
+    background-size: cover;
+  }
+  nav{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+  nav ul li:hover{
+    background-color:#088;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }
